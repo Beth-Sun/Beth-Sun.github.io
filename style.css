@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Eczar:wght@500&family=Encode+Sans&display=swap");
+@import url("fontawesome/css/all.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: wheat;
+  font-family: "Encode Sans", sans-serif;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1100px;
+}
+
+a {
+  color: rgb(32, 201, 150);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 25%;
+  padding-left: 25%;
+  min-width: 400px;
+  background-color: rgb(26, 85, 153);
+}
+
+@media screen and (max-width: 680px) {
+  nav ul {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+}
+
+nav ul li a {
+  display: block;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-width: 50px;
+  min-height: 20px;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  padding-top: 12px;
+  padding-bottom: 13px;
+  font-size: 20px;
+}
+
+section {
+  height: calc(100vh - 50px);
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
+}
+
+section#me {
+  background-color: rgb(128, 0, 32);
+}
+
+section#me>.container {
+  display: flex;
+  flex-direction: row;
+  
+  color: white;
+}
+
+.profile {
+  flex: 5;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.profile-options {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+  max-height: 500px;
+}
+
+img#selfie {
+  height: 512px;
+  width: 384px;
+}
+
+.profile-options > div {
+  height: 60px;
+}
+
+.profile-options button {
+  width: 100%;
+}
+
+.social {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.social > div {
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+button {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px, rgb(18 18 18 / 10%) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+button:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+section#about h1 {
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+section#about {
+  background-color: rgb(202, 161, 24);
+}
+.about-inner {
+  display: flex;
+  flex-direction: row;
+  max-height: 535px;
+}
+
+#aboutMe {
+  flex: 6;
+  margin: 20px;
+  background: white;
+  padding: 15px 30px;
+  border-radius: 0.75em;
+  overflow: auto;
+}
+
+#mySkills {
+  flex: 4;
+  margin: 20px;
+  background: white;
+  overflow: auto;
+  padding: 15px 30px 0 30px;
+  border-radius: 0.75em;
+}
+
+#aboutMe:hover,
+#mySkills:hover {
+  margin-top: 5px;
+  box-shadow: 5px 5px 30px black;
+}
+.college {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-bottom: 20px;
+  max-width: 1000px;
+  height: 100px;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.collegeImg {
+  flex: 1;
+}
+.collegeName {
+  flex: 2;
+  padding: 5px;
+  padding-top: 15px;
+}
+
+.collegeName > h2 {
+  margin: 0;
+  margin-bottom: 4px;
+}
+.collegeDetail {
+  flex: 7;
+  padding-top: 10px;
+}
+.collegeDetail > span {
+  display: block;
+  padding-top: 5px;
+}
+.college-icon {
+  height: 30px;
+  width: 102px;
+  margin-top: calc(50% - 15px);
+}
+#education {
+  background-color: rgb(176, 89, 35);
+  padding-left: 20px;
+  margin: 0;
+  padding-top: 20px;
+}
+#edu {
+  padding-bottom: 40px;
+}
+h1 {
+  margin: 0;
+  font-family: "Eczar", serif;
+}
+.fcc {
+  width: 102px;
+}
+
+.cert {
+  display: flex;
+  max-width: 1000px;
+  background-color: white;
+  height: 100px;
+  border-radius: 1em;
+  margin-bottom: 20px;
+}
+
+.cert > div {
+  flex-grow: 1;
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+.college:hover,
+.cert:hover {
+  box-shadow: 3px 3px 7px black;
+  margin-top: 5px;
+}
+
+.collegeName > h2 {
+  font-size: 16px;
+}
+.collegeName > span {
+  font-size: 14px;
+}
+.collegeDetail {
+  font-size: 12px;
+}
+
+.cert > div > h2 {
+  font-size: 16px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#contact {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+i.close {
+  cursor: pointer;
+  color: black;
+  font-size: 25px;
+}
+
+.form-action {
+  margin-top: 15px;
+}
+
+#contact > div {
+  position: relative;
+  background: white;
+  margin: 50px auto 20px auto;
+  padding: 20px 20px;
+  border-radius: 0.5em;
+  width: 80%;
+}
+
+#contact ul {
+  padding: 0 25px 0 9px;
+}
+
+#contact li {
+  list-style: none;
+  display: block;
+  padding-bottom: 10px;
+}
+
+#contact label {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.radio-group label {
+  display: inline-block !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  border: 1px solid #00d1b2;
+  box-shadow: inset 0 0.0625em 0.125em rgb(10 10 10 / 5%);
+  max-width: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.375em;
+  color: #363636;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+  vertical-align: top;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+textarea:hover,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #00d1b2;
+  box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25);
+}
+
+input[type="submit"],
+button.close {
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 0.375em;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.5em;
+}
+input[type="submit"] {
+  background-color: transparent;
+  border: 1px solid #f14668;
+  color: #f14668;
+}
+button.close {
+  font-weight: normal;
+  background-color: transparent;
+  border: 1px solid #485fc7;
+  color: #485fc7;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  color: white;
+  background-color: #f14668;
+}
+button.close:hover,
+button.close:focus {
+  color: white;
+  background-color: #485fc7;
+}
